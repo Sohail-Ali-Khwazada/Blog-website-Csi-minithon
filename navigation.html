@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/dbf0eea5d8.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* background ka kaam */
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://c0.wallpaperflare.com/preview/216/276/927/business-city-communication-connection.jpg);
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            background-position: center;
+        }
+
+        /* navbar ke upar ka */
+        .abovenav {
+            width: 50%;
+            height: 10vh;
+            margin-left: 50em;
+            /* border: 2px solid rgb(255, 255, 255); */
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .logo {
+            width: 120px;
+            cursor: pointer;
+            margin-right: 60em;
+        }
+
+        .searchbar {
+            padding: 1em;
+            margin: 0 1em;
+            font-size: 1em;
+            border-radius: 1em;
+            background-color: #EEEEEE;
+            outline: none;
+            box-shadow: 0 0 5px black;
+        }
+
+        .btnm {
+            width: 100em;
+            border: 2px solid #009688;
+            font-weight: bold;
+            color: white;
+            padding: 1.2em;
+            margin-right: 1.5em;
+            border-radius: .7em;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: transparent;
+            cursor: pointer;
+            position: relative;
+            /* overflow: hidden;    */
+        }
+
+        .btnm:hover {
+            border: 2px solid #00BFA5;
+        }
+
+        .rule {
+            color: white;
+            width: 100%;
+        }
+
+        /* navigation bar ka code */
+        .navbar {
+            width: 85%;
+            margin-left: 60em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 2em 1.5em;
+            position: relative;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li:hover a {
+            background: linear-gradient(white, Light Blue, transparent);
+        }
+
+        .navbar ul li::after {
+            content: "";
+            position: absolute;
+            height: .2em;
+            width: 0;
+            left: 0;
+            bottom: -.3em;
+            background: rgb(206, 209, 210);
+            transition: all ease-in-out .3s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+        .fa-solid {
+            margin: 0 .5em;
+        }
+
+
+        /* cards */
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            /* margin: 0 1em 0 1em; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* background-image: url(https://www.shutterstock.com/shutterstock/photos/1189626925/display_1500/stock-photo-blog-and-information-website-concept-workplace-background-with-text-view-from-above-1189626925.jpg); */
+            background-color: transparent;
+        }
+        .container::before{
+            content: "";
+            position:absolute;
+            width: 100%;
+            height: 150vh;
+            background: url(https://images.samsung.com/in/smartphones/galaxy-s23-ultra/images/galaxy-s23-ultra-highlights-kv.jpg);
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .box {
+            height: 60vh;
+            border: 3px solid #009688;
+            margin: 3vh;
+            background-color: rgb(250, 248, 235);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .internalimg {
+            height: 30vh;
+            width: 30vw;
+            border-radius: 10px;
+
+        }
+
+        .box:hover {
+            border: 3px solid #00BFA5;
+
+        }
+        section{
+            width: 50em;
+            margin: auto;
+            margin-top: 10em;
+        }
+        h1{
+            text-align: center;
+            display: block;
+            font-size:3em; 
+            color: white;
+        }
+        span{
+            color: goldenrod;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .static-txt{
+            color: white;
+            font-size: 40px;
+        }
+        .wrapper .dymanic-txt {
+            /* margin-left: 15px;             */
+            /* height: 90px; */
+            /* line-height: 90px; */
+            /* background-color: ; */
+            /* overflow: hidden; */
+        }
+        .wrapper .dymanic-txt ul{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .dyn {
+            list-style: none;
+            font-size: 40px;
+            color: #FA9386;
+            margin-left: 10px;
+            top: 0%;
+            position: relative;
+            animation: slide 6s steps(1) infinite;
+        }
+        @keyframes slide{
+            100%{
+                /* top: -185px;                 */
+                }
+        }
+         span{
+            position: relative;
+            margin : 5px 0;
+            /* line-height: 90px; */
+        } 
+         .dynamictext::after{
+            content:"";
+            position: absolute;
+            width:100%;
+            height:100%;
+            left:0;
+            border-left: 2px solid #FA9386;
+            background: transparent;
+            animation: typing 4s steps(21) infinite;
+        }
+        @keyframes typing{
+            100%{
+                left:100%;
+                margin: 0 -35px 0 35px;
+                }
+        }
+        h2{
+            text-align: center;
+        }
+        .texdec{
+            text-decoration: none;
+            color: black;
+            font-size: 1.2em;
+            text-align: justify;
+            /* padding: .3em; */
+        }
+        .but{
+            text-decoration: none;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="abovenav">
+            <img src="https://play-lh.googleusercontent.com/lMrBvD9Xr3Lyh6bs1OVDCanvhoZQEu4sWICjbM5amCrMSgHKFjnjfJ4_1iZpGME0L7Y=w600-h300-pc0xffffff-pd"
+                alt="" class="logo">
+            <div>
+                <input type="search" class="searchbar" id="" placeholder="Search Here">
+            </div>
+            <button class="btnm"><span></span><a href="logn.html" class="but">login</a></button>
+            <button class="btnm"><span></span><a href="register.html" class="but">Register</a></button>
+        </div>
+        <hr class="rule">
+        <div class="navbar">
+            <ul>
+                <li class="item"><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="">tech</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+        </div>
+        <section>
+            <h1>Welcome to <span >Binary Fetch</span></h1>
+            <div class="wrapper">
+                <div class="static-txt"></div class="main">
+                    <ul class="dynamic-txt">
+                        <li class="dyn" ><span class="dynamictext">Read About Technology</span></li>
+                    </ul>
+            </div>
+        </section>
+    </div>
+    
+    
+    <div class="container">
+        <div class="box" id="box-1">
+            <a href="s23.html" class="texdec">
+            <img src="https://images.samsung.com/in/smartphones/galaxy-s23-ultra/images/galaxy-s23-ultra-highlights-kv.jpg"
+                alt="Image" class="internalimg">
+                <h2>Samsung S23 Ultra
+                    Latest Samsung Flagship Smartphone
+                    </h2>
+                    <br>
+                <p>Samsung has just released its latest flagship smartphone, the Galaxy S23 Ultra. The phone features a number of impressive upgrades over its predecessor, including a better display, a more powerful processor, and longer battery life.(...)
+                </p>
+            </a>
+        </div>
+        <div class="box" id="box-2" >
+            <a href="" class="texdec">
+            <img class="internalimg" src="https://www.dpreview.com/files/p/articles/5473139871/DEBF2BEA-C0A2-482F-B66C-9071BC523CB8.png" alt="">           
+           <h2>Apple iPhone 14
+            Display quality</h2>
+           <br>
+            <p>The iPhone 14 has a 6.1-inch Super Retina XDR display with a resolution of 2532 x 1170 pixels. The display is bright, sharp, and colorful, and it offers excellent viewing angles. It also supports HDR10 and Dolby Vision, so you can enjoy your favorite movies and TV shows in stunning detail.<span class=""int>(...)</span></p>
+        </a>
+        </div>
+        <div class="box" id="box-3" >
+            <a href="" class="texdec">
+            <img class="internalimg" src="https://images.samsung.com/is/image/samsung/assets/in/galaxy-tab-s9/feature/galaxy-tab-s9-size-beige-startframe-mo.jpg" alt="">
+            <h2>Samsung Tablets</h2>
+            <br>
+            <p>The latest Samsung tablets all have high-quality displays. The Galaxy Tab S9 and S9+ have 12.4-inch Super AMOLED displays with a resolution of 2800 x 1752 pixels. The Galaxy Tab S9 Ultra has a massive 14.6-inch Super AMOLED display with a resolution of 2960 x 1848 pixels. All three tablets support HDR10+ and offer vibrant colors and deep blacks. <span class=""int>(...)</span></p>
+            </a>
+        </div>
+        <div class="box" id="box-4" >
+            <a href="ps5.html" class="texdec">
+            <img class="internalimg" src="https://i.ytimg.com/vi/4vDTE7PutHA/maxresdefault.jpg" alt="">
+            <h2>The Latest Game Launches: Improvements Over the Last Generation
+            </h2>
+            <br>
+            <p>The latest generation of game consoles has been ushered in with a wave of new releases, each promising to offer stunning visuals, immersive gameplay, and cutting-edge technology.<span class=""int>(...)</span></p>
+            </a>
+        </div>
+        <div class="box" id="box-5" >
+            <a href="Alinmed.html" class="texdec">
+            <img class="internalimg" src="https://i.ytimg.com/vi/JldMvQMO_5U/maxresdefault.jpg" alt="">
+
+            <h2>Artificial intelligence in medical field</h2>
+            <br>
+            <p>"Artificial intelligence (AI) is rapidly transforming the medical field, with new applications being developed all the time..<span class=""int>(...)</span></p>
+        </a>
+        </div>
+        <div class="box" id="box-6" >
+            <a href="#" class="texdec">
+            <img class="internalimg" src="https://cdn.mos.cms.futurecdn.net/Zaan37XJE8vRHbA8wPjhs5-1200-80.jpg.webp" alt="">
+            <h2>15-inch MacBook Air: Apple M2 chip</h2>
+            <br>  
+            <p>The MacBook M2 Pro is Apple's latest high-performance laptop powered by the custom-designed M2 Pro chip, succeeding the M1 Pro.
+                It boasts impressive processing power, improved graphics, and extended battery life, making it ideal for professionals and power users.
+                With a sleek design, Retina display, and macOS, it offers a premium computing experience.<span class=""int>(...)</span></p>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

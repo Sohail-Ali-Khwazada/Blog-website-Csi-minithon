@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S23 ultra</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container { 
+            color: aliceblue;
+        }
+        body {
+            background-color: black;
+        }
+        .title {
+            text-align: center;
+        }
+        .article {
+            font-size: 3vh;
+        }
+        .article h2 {
+            margin: 2vh;
+            color: aqua;
+        }
+        .img {
+            position: relative;
+            right:0%;
+            width: 30vw;
+            display: block;
+            margin: auto;
+            border: 2px solid white;
+            overflow: hidden;
+            
+        }
+        .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all ease-in-out 1s;
+        }
+        .img:hover img {
+            scale:1.2;
+        }
+        .authorname {
+            margin: 3vh;
+            /* display: flex; */
+            border: 2px solid gold;
+            position: relative;
+        }
+        .authorname img {
+            border: 2px solid gold;
+            height: 3vh;
+            border-radius: 50%;
+            margin: 1vh;
+        }
+        .authorname span {
+            position: relative;
+            bottom: 2vh;
+        }
+        .authorname a {
+            text-decoration: none;
+            color:aliceblue;
+        }
+        .authorname span::after {
+            content: "";
+            position: absolute;
+            height: .2em;
+            width: 0;
+            left: 0;
+            bottom: -.3em;
+            background: rgb(206, 209, 210);
+            transition: all ease-in-out .3s;
+        }
+
+        .authorname span:hover::after {
+            width: 100%;
+            
+        }
+        .authorname a:hover {
+            color: gold;
+        }
+        .share img {
+            position: relative;
+            left: 2vh;
+            height:3vh;
+            margin: 1vh;
+            border-radius: 3vh;
+        }
+        /* .articleimg:hover{
+            transform: scale(1.2);
+        } */
+        /* comment css */
+        .comment{
+            border: 2px solid #009688;
+            border-radius: 2em;
+            height: 90vh;
+            margin-top: 10em;
+            background-color: rgb(221, 217, 217);
+        }
+        .combox{
+            margin-bottom: 5em;
+            margin: 2em;
+            font-weight: bold;
+            font-size: 1.2em;   
+        }
+        label{
+            display: block;
+            margin-bottom:.2em;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        #commentkro{
+            margin-bottom:1em; 
+        }
+        .commentbox{
+            margin: 2em;
+        }
+        input{
+            font-size: 1.5em;
+            border-radius: .3em; 
+            text-align: center;
+        }
+        input[type="textarea"]{
+            width: 50em;
+            height: 10em;
+            border-radius: 1.2em; 
+            font-size: 1.5em;
+            text-align: left;
+        }
+        input[type="button"]
+        {
+            width: 10em;
+            border:2px solid #009688;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            padding: .8em;
+            margin-left: 55em;
+            border-radius: .7em;
+            text-transform: uppercase;
+            text-align: center;
+            cursor:pointer;
+        }
+        input[type="button"]:hover{
+            background-color: silver;
+            border:2px solid #00BFA5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>LATEST SAMSUNG FLAGSHIP PHONE</h1>
+        </div>
+        <hr>
+        <div class="authorname"> 
+            <a href="shlok.html">
+            <img src="https://images.yourstory.com/cs/2/40f5f790c39f11ebab0b1583f8394132/unnamed-1629447814834.jpg?fm=png&auto=format&w=800" alt="image not found!">
+            <span>Shlok Srivastav </span>
+        </a>
+
+        </div>
+        <div class="share">
+            <a href="">
+            <img src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN" alt="Whatsapp img">
+            <img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" alt="Twitter img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLdKxavLqNf-Bg7D2Ia9aI1hnkeLs1tV3EyZT0hHpltQ&s" alt="facebook img">
+        </a>
+        </div>
+        <div class="article">
+            Samsung has just released its latest flagship smartphone, the Galaxy S23 Ultra. The phone features a number of impressive upgrades over its predecessor, including a better display, a more powerful processor, and longer battery life.
+
+            <h2>Display Quality</h2>
+
+The Galaxy S23 Ultra has a 6.8-inch AMOLED display with a resolution of 3088 x 1440 pixels. The display is HDR10+ certified and has a peak brightness of 1750 nits. This makes it one of the brightest displays on the market, and it ensures that images and videos look sharp and vibrant, even in direct sunlight.
+<div class="img">
+<img src="https://www.digitaltrends.com/wp-content/uploads/2023/02/samsung-galaxy-s23-ultra-green-back-6.jpg?resize=625%2C417&p=1" alt="image not found" class = articleimg>
+</div>
+
+<h2>Processor</h2>
+
+The Galaxy S23 Ultra is powered by the Qualcomm Snapdragon 8 Gen 2 processor. This is the latest and most powerful processor from Qualcomm, and it provides the phone with blazing-fast performance. Whether you're gaming, editing videos, or multitasking, the Galaxy S23 Ultra can handle it with ease.
+
+<h2>Battery Life</h2>
+
+The Galaxy S23 Ultra has a 5000mAh battery. This is a significant improvement over the 4800mAh battery in the Galaxy S22 Ultra. The larger battery means that the Galaxy S23 Ultra can last for a full day of use on a single charge, even with heavy usage.
+
+<h2>Improvements from the Last Generation</h2>
+
+In addition to the improvements mentioned above, the Galaxy S23 Ultra also features a number of other improvements over the Galaxy S22 Ultra. These include:
+
+A new design with a more refined look and feel
+A better camera system with a 108MP main sensor
+S Pen support
+IP68 water resistance
+<div class="img">
+<img src="https://images.samsung.com/in/smartphones/galaxy-s23-ultra/images/galaxy-s23-ultra-highlights-kv.jpg
+" alt="image not found!" class = articleimg>
+</div>
+<span>Overall, the Galaxy S23 Ultra is a significant upgrade over its predecessor. It has a better display, a more powerful processor, longer battery life, and a number of other improvements. If you're looking for the best Samsung phone on the market, the Galaxy S23 Ultra is the one to get.
+
+Here are some additional details about the display, processor, and battery life of the Galaxy S23 Ultra:
+
+The display is made of Dynamic AMOLED 2X technology, which provides deep blacks and vibrant colors.
+The processor is based on a 4nm manufacturing process, which is the latest and most efficient process available.
+The battery supports 45W fast charging, so you can quickly top it up when you're running low on power.
+The Galaxy S23 Ultra is a great choice for anyone who wants the best possible smartphone experience. It has a powerful processor, a long-lasting battery, and a stunning display. If you're looking for a new phone, the Galaxy S23 Ultra is definitely worth considering.
+</span>
+
+
+        </div>
+    </div>
+    <div class="comment">
+        <div class="combox">LEAVE A REPLY</div>
+        <div class="commentbox">
+            <label for="Comment" id="commentkro">Your Comment</label>
+                <input type="textarea" id="Comment" >
+           </div>
+           <div class="commentbox">
+               <label for="Name">Name: </label>
+                   <input type="text" id="Name" placeholder="Enter Your Name" required="required">
+           </div>
+           <div class="commentbox">
+                   <label for="Email">Email: </label>
+                       <input type="email" id="Email" placeholder="Enter Your Name" required="required">
+           </div>
+           <div class="bottonholder">
+               <input type="button" value="Submit">            
+           </div>
+   </div>
+    
+</body>
+</html>

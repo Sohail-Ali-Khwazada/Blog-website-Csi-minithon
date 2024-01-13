@@ -1,0 +1,231 @@
+<html>
+
+<head>
+    <title>login page: </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            background: url(https://c4.wallpaperflare.com/wallpaper/162/894/557/neon-keyboards-computer-pc-gaming-wallpaper-preview.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .form-box {
+            position: relative;
+            
+            left: 0;
+            width: 350px;
+            margin: 175px auto 0;
+            box-shadow: 0 0 10px 0 #000;
+            padding: 50px 25px;
+            padding-bottom: 20px;
+            background-color: snow;
+            animation-name: box;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+            animation-timing-function:linear;
+            animation-direction: reverse;
+           
+            
+           
+        }
+        @keyframes box {
+            from {
+                left:0%;
+            }
+            to {
+                left:-67%;
+            }
+        }
+        .fade {
+            opacity: 1;
+            animation-name: opac;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+            animation-direction: reverse;
+        }
+        @keyframes opac {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        .form-box h2 {
+            font-weight: 400;
+            text-align: center;
+            margin: -80px auto 50px;
+            background: snow;
+            width: 200px;
+            height: 40px;
+            padding-top: 20px;
+            border-radius: 30px;
+            box-shadow: 0 0 4px 0 #000;
+        }
+
+        .form-box p {
+
+            text-align: center;
+            margin: 30px auto
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            padding: 20px;
+            /* border-radius: 30px; */
+            border: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+        
+
+        .input-group {
+            margin: 20px auto;
+            position: relative;
+        }
+
+        span {
+            position: absolute;
+            font-size: 1em;
+            top: 2vh;
+            left: 2.5vh;
+            text-transform: uppercase;
+            transition-property: all;
+            transition-duration: 0.5s;
+            background-color: snow;
+            
+            /* top: -7px;
+            left: 20px;
+            background-color: snow;
+            padding: 0 5px; */
+        }
+         .inbox:focus ~ span,
+         .inbox:valid ~ span
+         {
+            color: #ff1100;
+            transform: translateX(12px) translateY(-18px);
+            font-size: 0.8em;
+            background-color: snow;
+            
+        }
+
+
+        button {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 30px;
+            font-size: 14px;
+            background-color: #ff1100;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: black;
+            transition: 0.6s;
+        }
+
+        .social {
+            text-align: center;
+        }
+
+        .social img {
+            width: 40px;
+            margin: 0 6px;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #type {
+            top: 0px;
+            margin: 10px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        /* .me {
+            size: 10px;
+
+        }
+
+        #fem {
+            float: right;
+        } */
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h2 class="fade">Login Here</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" class="inbox" required = "required">
+                <span class="fade">Name</span>
+            </div>
+            <div class="input-group">
+                <input type="email" class="inbox" required = "required">
+                <span class="fade">Email</span>
+            </div>
+            <!-- <div class="input-group">
+                <label>Address</label>
+                <textarea name="location" id="" cols="45" rows="3"></textarea>
+            </div> -->
+
+            <div class="input-group">
+                <input type="text" class="inbox" required = "required">
+                <span class="fade">Age</span>
+            </div>
+
+            <!-- <div class="input-group">
+                <input type="text" class="inbox" required = "required">
+                <span class="fade">height</span>
+            </div> -->
+            <div class="input-group" id="ds">
+                <div class="fade">Your Gender</div>
+                <select>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+            </div>
+
+
+            <button type="submit" class="newcol"><a href="Homepage.html">log in ➔</a></button>
+
+        </form>
+        <p class="fade">Register in with social media account</p>
+        <div class="social">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png">
+            <img
+                src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png">
+            <img
+                src="https://cdn-icons-png.flaticon.com/512/281/281764.png?w=740&t=st=1675573915~exp=1675574515~hmac=f32d9b13a8f58802a2840d17847f1242d4eabdf308382167cfa2bce6cceba23b">
+        </div>
+        <p class="fade"><a href="https://goo.gl/wUodSD"></a></p>
+    </div>
+
+
+
+</body>
+
+</html>
